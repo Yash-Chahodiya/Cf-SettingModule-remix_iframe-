@@ -1,0 +1,1918 @@
+.ant-input-label {
+  @apply text-sm text-[#343a40e3] !pr-0 font-semibold mb-0 w-full;
+}
+
+.cf-input-field.inline-edit input,
+.cf-currency-input-field.inline-edit,
+.cf-datepicker-field.inline-edit .ant-picker,
+.cf-timepicker-field.inline-edit input,
+.cf-textarea-field.inline-edit .ant-input,
+.cf-select-field.inline-edit
+  .ant-select-selector
+  .ant-select-selection-item:not(
+    .select-filed-header .ant-select-selector .ant-select-selection-item
+  ),
+.cf-select-field.inline-edit
+  .ant-select-selector:not(
+    .cf-select-field.inline-edit .select-filed-header .ant-select-selector,
+    .common-filter
+      .cf-select-field.inline-edit
+      .filter-select-class
+      .ant-select-selector,
+    .cf-select-field.inline-edit
+      .ant-select.select-apply-border
+      .ant-select-selector
+  ) {
+  @apply text-primary-900 text-sm dark:text-white/90 hover:bg-[#f4f5f6] dark:hover:bg-dark-900 dark:focus-within:!bg-dark-900 focus-within:!bg-[#f4f5f6];
+}
+
+.common-filter .cf-new-input-field .ant-input[disabled],
+.common-filter.cf-input-btn-filter .cf-input-field .ant-input[disabled],
+.common-filter.cf-input-btn-filter
+  > div:has(> div > div .cf-input-field .ant-input[disabled]),
+.cf-input-field .ant-input[readonly],
+.cf-currency-input-field input[readonly],
+.cf-textarea-field .ant-input[readonly] {
+  @apply cursor-no-drop;
+}
+.cf-input-field.cf-input-right .ant-input[readonly]:hover,
+.cf-input-field.cf-input-right .ant-input[readonly]:focus {
+  @apply !text-right;
+}
+
+.cf-input-field:has(
+    > .ant-input-group-wrapper .ant-input-wrapper .ant-input[readonly]
+  ),
+.cf-input-field:has(> .ant-input[readonly]),
+.cf-currency-input-field:has(> input[readonly]),
+.cf-textarea-field:has(> .ant-input[readonly]) {
+  @apply before:!scale-x-0;
+}
+
+.cf-select-field.inline-edit
+  .ant-select.select-apply-border
+  .ant-select-selector {
+  @apply text-primary-900 text-sm;
+}
+
+.cf-select-field.inline-edit
+  .ant-select.select-apply-border
+  .ant-select-arrow
+  span[aria-label="down"]
+  svg {
+  @apply dark:text-white/90;
+}
+
+.cf-select-field .ant-select-multiple .ant-select-selection-item {
+  @apply hover:!bg-[#d9e1ed] dark:hover:!bg-dark-900;
+}
+
+.select-filed-header .ant-select-selector .ant-select-selection-item {
+  @apply text-primary-900 text-13 dark:text-white/90;
+}
+
+.cf-datepicker-field.inline-edit .ant-picker.ant-picker-focused,
+.cf-timepicker-field.inline-edit .ant-picker:hover,
+.cf-datepicker-field.inline-edit .ant-picker.ant-picker-focused + .field-icon,
+.cf-datepicker-field.inline-edit .ant-picker:hover + .field-icon {
+  @apply dark:!bg-dark-900;
+}
+
+.cf-input-field.inline-edit > input,
+.cf-currency-input-field.inline-edit > input {
+  @apply !h-fit truncate;
+}
+
+.cf-input-field.apply-border
+  > input:not(
+    .inline-edit input,
+    .file-photos-gallery,
+    .url-inpul-filed,
+    .input-border-apply .cf-input-field input
+  ),
+.cf-input-field
+  .ant-input-group-wrapper:not(
+    .cf-input-field.inlineleft-icon-suffix .ant-input-group-wrapper
+  ),
+.cf-currency-input-field.apply-border,
+.cf-textarea-field .ant-input:not(.inline-edit .ant-input),
+.cf-datepicker-field .ant-picker:not(.inline-edit .ant-picker),
+.cf-timepicker-field .ant-picker:not(.inline-edit .ant-picker) {
+  @apply !border-0 !border-b !border-solid !border-[#CED4DA];
+}
+
+.ant-select-selection-item,
+.ant-select-selector,
+.status-selection-dropdown .ant-select-arrow,
+.status-selection-dropdown .ant-select-selection-item,
+.status-selection-dropdown .ant-select-selector {
+  color: inherit;
+}
+
+.field-select-inline-block
+  .cf-select-field
+  .ant-select:hover
+  .ant-select-arrow:not(:last-child) {
+  @apply !opacity-0;
+}
+
+.cf-datepicker-field.inline-edit .ant-picker-suffix,
+.cf-timepicker-field.inline-edit .ant-picker-suffix,
+.cf-select-field.inline-edit
+  .ant-select-arrow:not(
+    body .cf-select-field .select-filed-header .ant-select-arrow
+  ),
+.header-select-status-option .ant-select-arrow,
+.multi-select-collapse .ant-collapse-expand-icon {
+  @apply sm:opacity-0 text-primary-900 dark:text-white/90;
+}
+
+body
+  .cf-select-field.inline-edit
+  .ant-select.select-filed-header
+  .ant-select-arrow,
+.cf-datepicker-field.inline-edit:hover .ant-picker-suffix,
+.cf-datepicker-field.inline-edit:focus-within .ant-picker-suffix,
+.cf-timepicker-field.inline-edit:focus-within .ant-picker-suffix,
+.multi-select-collapse:hover .ant-collapse-expand-icon,
+.multi-select-collapse .ant-collapse-item-active .ant-collapse-expand-icon,
+.cf-select-field.inline-edit
+  .ant-select:hover
+  .ant-select-arrow:not(
+    .cf-select-field.inline-edit
+      .ant-select.ant-select-disabled:hover
+      .ant-select-arrow
+  ),
+.common-filter:hover
+  .cf-select-field.inline-edit
+  .ant-select
+  .ant-select-arrow:not(
+    .common-filter:hover
+      .cf-select-field.inline-edit
+      .ant-select.ant-select-disabled
+      .ant-select-arrow
+  ),
+.cf-select-field.inline-edit.select-filed-header .ant-select .ant-select-arrow,
+.cf-select-field.inline-edit .ant-select:focus-within .ant-select-arrow,
+.header-select-status-option:hover .ant-select-arrow,
+.header-select-status-option.ant-select-open .ant-select-arrow,
+.preferences-client-filed:hover .ant-select .ant-select-arrow {
+  @apply !opacity-100;
+}
+
+body
+  .common-card
+  .cf-select-field.inline-edit.select-filed-header
+  .ant-select-selection-item {
+  @apply !leading-[26px] text-13;
+}
+
+.cf-auth-input .ant-input {
+  @apply !pl-10 !py-4 pr-4 !rounded-2xl h-[52px];
+}
+
+.cf-auth-input .ant-input-password {
+  @apply !p-0 !rounded-2xl;
+}
+
+.cf-auth-input .ant-input-password .ant-input-suffix {
+  @apply !ms-0;
+}
+
+.cf-auth-input .ant-input-password .ant-input {
+  @apply !bg-transparent pr-[52px] w-full;
+}
+
+.cf-input-field,
+.cf-currency-input-field,
+.cf-select-field,
+.cf-textarea-field,
+.cf-datepicker-field,
+.cf-inline-custom-btn,
+.cf-timepicker-field {
+  @apply relative;
+}
+
+.cf-input-field > input {
+  @apply h-[34px] block;
+}
+
+.addon-before-icon .ant-input-group-wrapper,
+.cf-datepicker-field,
+.cf-currency-input-field,
+.cf-timepicker-field {
+  @apply h-[34px];
+}
+
+.cf-datepicker-field .ant-picker,
+.cf-timepicker-field .ant-picker,
+.cf-textarea-field .ant-input {
+  @apply !px-0;
+}
+
+.cf-textarea-field.inline-edit .ant-input {
+  @apply !pl-1.5 !pt-1.5 !pb-[3px] !pr-8 !leading-6 overflow-hidden hover:overflow-y-auto focus-within:overflow-y-auto focus-within:shadow-none;
+}
+
+.cf-datepicker-field.inline-edit .ant-picker,
+.cf-timepicker-field.inline-edit .ant-picker {
+  @apply !px-1.5 !py-1.5;
+}
+
+.cf-input-field,
+.cf-currency-input-field,
+.cf-select-field,
+.cf-textarea-field,
+.cf-datepicker-field,
+.cf-inline-custom-btn,
+.cf-timepicker-field {
+  @apply before:absolute before:bottom-0 before:left-0 before:h-px before:w-full before:scale-x-0 before:origin-center before:bg-primary-900/60 dark:before:bg-[#696b6e]  before:z-[5];
+}
+
+.cf-textarea-field .ant-input {
+  @apply mt-1.5 !min-h-[34px];
+}
+
+.cf-textarea-field.inline-edit .ant-input {
+  @apply mt-0;
+}
+
+.cf-input-field:focus-within,
+.cf-input-field:focus,
+.cf-currency-input-field:focus-within,
+.cf-currency-input-field:focus,
+.cf-select-field:focus-within,
+.cf-select-field:focus,
+.cf-textarea-field:focus-within,
+.cf-textarea-field:focus,
+.cf-datepicker-field:focus-within,
+.cf-datepicker-field:focus,
+.cf-inline-custom-btn:focus-within,
+.cf-inline-custom-btn:focus,
+.cf-timepicker-field:focus-within,
+.cf-timepicker-field:focus {
+  @apply before:scale-x-100 before:transition-all before:ease-in-out before:duration-300;
+}
+
+.cf-currency-input-field {
+  @apply before:-bottom-[1px];
+}
+
+.cf-select-field
+  .ant-select-selector:not(
+    .custom-select-dropdown .ant-select-selector,
+    .cf-select-field.inline-edit .ant-select-selector,
+    .select-add-icon-before .ant-select-selector
+  ),
+.cf-input-field .ant-input-wrapper > input,
+.cf-input-field.inlineleft-icon-suffix .ant-input-affix-wrapper,
+.ant-modal-content,
+.file-photo-timeline-view .ant-collapse-content .ant-collapse-content-box {
+  @apply !p-0;
+}
+
+.cf-input-field.inputleft-icon-suffix .ant-input-group-addon,
+.addon-before-icon .ant-input-group-addon,
+.inlineleft-icon-suffix .ant-input-group-addon {
+  @apply pr-1 pl-0;
+}
+
+.cf-input-field.inlineleft-icon-suffix .ant-input-affix-wrapper {
+  @apply focus-within:!shadow-none;
+}
+
+.cf-select-field
+  .ant-select-selection-search:not(
+    .custom-select-dropdown .ant-select-selection-search,
+    .cf-singal-selection .ant-select-selection-search,
+    .cf-select-field.inline-edit .ant-select-selection-search
+  ),
+.cf-select-field.inline-edit
+  .ant-select-selection-overflow
+  .ant-select-selection-search,
+.cf-search-input .ant-input-group-addon {
+  @apply !start-0;
+}
+
+.cf-select-field.inline-edit .ant-select-multiple .ant-select-selection-search {
+  @apply !ml-0;
+}
+
+.cf-select-field.inline-edit
+  .ant-select-selector:not(
+    .common-filter
+      .cf-select-field.inline-edit
+      .filter-select-class
+      .ant-select-selector,
+    .addon-before-class .cf-select-field.inline-edit .ant-select-selector,
+    .cf-select-field.inline-edit .custom-select-option .ant-select-selector
+  ) {
+  @apply !pl-1.5 !pr-6;
+}
+
+.cf-select-field.inline-edit .ant-select-selection-search {
+  @apply !start-1.5;
+}
+
+.cf-select-field.inline-edit .ant-select-selection-placeholder {
+  @apply left-1.5;
+}
+
+.cf-textarea-field .ant-input.ant-input-disabled {
+  @apply hover:!resize-none focus-within:!resize-none;
+}
+
+.cf-textarea-field .ant-input.ant-input-disabled,
+.cf-currency-input-field:has(> input[disabled]),
+body
+  .cf-select-field.inline-edit
+  .ant-select.select-filed-header
+  .ant-select-selector,
+body
+  .cf-select-field.inline-edit
+  .ant-select.select-filed-header
+  .ant-select-selection-item,
+body .cf-select-field.inline-edit .ant-select.select-filed-header .ant-select,
+body
+  .common-filter
+  .cf-select-field.inline-edit.custom-select-dropdown
+  .ant-select-selector {
+  @apply focus-within:!bg-transparent hover:!bg-transparent;
+}
+
+.ant-popover
+  .common-filter
+  .cf-select-field.inline-edit
+  .ant-select-selection-placeholder {
+  @apply left-0;
+}
+
+.more-option-filter {
+  @apply min-h-[20px];
+}
+
+.cf-select-field.multiselect-tags .ant-select-selection-placeholder,
+.checkBox-Font600 > span + span {
+  @apply font-semibold;
+}
+
+.cf-select-field.multiselect-tags .ant-select-selection-search,
+.cf-select-field.multiselect-tags .ant-select-selection-placeholder {
+  @apply start-0 ms-0;
+}
+
+.ant-checkbox .ant-checkbox-input:focus-visible + .ant-checkbox-inner {
+  @apply border-primary-900;
+}
+
+.ant-popover-content .ant-btn-primary {
+  @apply bg-primary-900 shadow-none;
+}
+
+.ant-popover-content .ant-popconfirm-title {
+  @apply text-13;
+}
+
+.ant-popover-content
+  .ant-btn-icon[style="width: 0px; opacity: 0; transform: scale(0);"],
+.ant-btn .ant-btn-icon:empty,
+.cf-input-field .ant-input-suffix:empty,
+.ant-checkbox-wrapper .ant-checkbox + span {
+  @apply !m-0 !p-0;
+}
+
+.ant-select-dropdown.ant-slide-up-leave:not(
+    .ant-select-dropdown.ant-slide-up-leave.inner-page-select-option
+  ) {
+  @apply !z-[9999] !block;
+}
+
+.radio-icon-btn,
+.ant-progress-block .ant-progress-outer {
+  @apply flex;
+}
+
+.radio-icon-btn .ant-radio-button-wrapper {
+  @apply p-1.5 first:rounded-r-none last:rounded-l-none;
+}
+
+.radio-icon-btn-border .ant-radio-button-wrapper {
+  @apply !border-[#d9d9d9] before:hidden !bg-transparent;
+}
+
+.radio-list-btn.notification-btn .ant-radio-button-wrapper {
+  @apply w-1/2;
+}
+
+.radio-list-btn .ant-radio-button-wrapper {
+  @apply border-0 !text-[15px] h-9 focus-within:outline-0 !px-2.5 !whitespace-nowrap !font-semibold !text-black !bg-transparent before:transition-all before:duration-300 before:ease-in-out before:absolute before:top-auto before:!p-0 before:bottom-0 before:rounded before:w-0 before:h-[3px] before:bg-primary-900 dark:before:bg-white/60 before:left-1/2 before:-translate-x-1/2;
+}
+
+.radio-list-btn .ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+  @apply before:w-full;
+}
+
+.checbox-success .ant-checkbox-checked .ant-checkbox-inner {
+  @apply bg-[#66bb6a] border-[#66bb6a];
+}
+
+.checbox-success:hover .ant-checkbox-checked .ant-checkbox-inner {
+  @apply !bg-[#66bb6a] !border-[#66bb6a];
+}
+
+.checbox-success:hover .ant-checkbox-checked::after {
+  @apply !border-[#66bb6a];
+}
+
+.orange-checkBox .ant-checkbox-checked .ant-checkbox-inner,
+.orange-checkBox:hover .ant-checkbox-checked .ant-checkbox-inner {
+  @apply !bg-orange-500 !border-orange-500;
+}
+
+.orange-checkBox:hover .ant-checkbox-checked:not(.ant-checkbox-disabled):after {
+  @apply !border-orange-500;
+}
+
+.ant-select-dropdown
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  @apply bg-transparent;
+}
+
+.ant-select-dropdown
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled),
+.ant-select-dropdown .ant-select-item {
+  @apply hover:!bg-blue-50 dark:hover:!bg-dark-900;
+}
+
+.ant-select-dropdown
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  @apply text-primary-900 bg-blue-50 dark:bg-dark-800 dark:text-white;
+}
+
+.inner-page-select-option.ant-select-dropdown
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  @apply font-normal;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  @apply bg-primary-900;
+}
+
+.ant-checkbox-checked:hover .ant-checkbox-inner {
+  @apply !bg-primary-900;
+}
+
+.ant-radio-group .ant-radio-button + span {
+  @apply flex items-center justify-center h-full w-full sm:!text-13 !text-[11px] font-semibold;
+}
+
+.radio-list-btn.ant-radio-group .ant-radio-button + span {
+  @apply text-[15px] dark:text-white;
+}
+
+.list-tab-button label {
+  @apply !border-0 bg-[#EEEFF0] dark:bg-dark-800 h-auto px-3 py-[3px];
+}
+
+.radio-icon-btn label,
+.list-tab-button label,
+.list-text-button label {
+  @apply dark:bg-dark-800 dark:!text-white;
+}
+
+.radio-icon-btn label:hover,
+.list-tab-button label:hover,
+.list-text-button label:hover {
+  @apply dark:text-white;
+}
+
+.radio-icon-btn label.active,
+.radio-icon-btn label.active:hover {
+  @apply bg-primary-900 !border-[#d9d9d9] dark:!text-primary-900 dark:bg-white;
+}
+
+.list-text-button
+  label.ant-radio-button-wrapper-checked
+  .ant-radio-button-checked {
+  @apply !outline-0;
+}
+
+.list-text-button label.ant-radio-button-wrapper-checked,
+.list-text-button label.ant-radio-button-wrapper-checked:hover {
+  @apply !bg-[#f1f4f9] dark:!bg-dark-950 !border-[#d9d9d9] dark:!border-dark-900 dark:!text-white/90 !outline-0;
+}
+
+.ant-input-search
+  .ant-input-suffix:has(> .ant-input-clear-icon.ant-input-clear-icon-hidden),
+.radio-list-btn label.ant-radio-button-wrapper[style="display: none;"],
+.inline-loading-success .anticon-calendar,
+.inline-loading-success .ant-picker-clear,
+.inline-loading-success .ant-select-clear,
+.inline-loading-success .right-from-square-icon,
+.inline-loading-success
+  .ant-select-arrow:not(
+    .inline-loading-success .select-filed-header .ant-select-arrow,
+    .common-filter
+      .inline-loading-success
+      .select-filed-header
+      .ant-select-arrow
+  ) {
+  @apply !hidden;
+}
+
+.list-tab-button label.active,
+.list-tab-button label.active:hover {
+  @apply !bg-white !border-[#d9d9d9] dark:!text-primary-900;
+}
+
+.list-tab-button label:before {
+  content: none !important;
+}
+
+.list-tab-button label.active:before,
+.list-text-button label.active::before,
+.radio-icon-btn label.active:before {
+  content: none;
+}
+
+.list-text-button label {
+  @apply first:rounded-r-none last:rounded-l-none;
+}
+
+.list-text-button label:not(:first-child):not(:last-child) {
+  @apply rounded-none;
+}
+
+.list-text-button label span + span {
+  @apply sm:!text-[14px] !text-[12px];
+}
+
+.widget-tab label span + span {
+  @apply !text-[13px] !font-normal;
+}
+
+.cf-search-input .ant-input-wrapper {
+  direction: rtl;
+}
+
+.cf-search-input .ant-input-affix-wrapper {
+  direction: ltr;
+}
+
+.cf-search-input .ant-input-affix-wrapper {
+  @apply !rounded-r-md !rounded-l-none h-[34px] !border-0 dark:bg-[#ffffff0a];
+}
+
+.cf-datepicker-field.inline-edit .ant-picker-input:hover .ant-picker-clear {
+  @apply bg-[#f4f5f6] w-3.5 h-3.5 dark:bg-dark-900;
+}
+
+.cf-datepicker-field .ant-picker-input .ant-picker-suffix,
+.cf-timepicker-field .ant-picker-input .ant-picker-suffix {
+  @apply dark:text-white/90;
+}
+
+.cf-search-input .ant-input-affix-wrapper input {
+  @apply placeholder:!text-[#bdbdbd] dark:placeholder:!text-white/25;
+}
+
+.cf-input-field .ant-input-affix-wrapper .ant-input[readonly]:hover,
+.cf-input-field .ant-input-affix-wrapper:has(> .ant-input[readonly]):hover,
+.ant-picker .ant-picker-input > input[disabled]:hover,
+.cf-search-input .ant-input-affix-wrapper input,
+.cf-input-field .ant-input-group-wrapper .ant-input-group-addon,
+.file-photo-timeline-view .ant-collapse-content,
+.cf-select-field.inline-edit
+  .ant-select-single
+  .ant-select-selector
+  .ant-select-selection-item:hover,
+.cf-input-field.inline-edit input[disabled]:hover {
+  @apply !bg-transparent;
+}
+
+.cf-search-input.page-search-input .ant-input-affix-wrapper {
+  @apply pl-0;
+}
+
+.cf-search-input.page-search-input .ant-input-affix-wrapper,
+.cf-search-input.footer-search-input .ant-input-affix-wrapper,
+.cf-search-input.chat-search-input .ant-input-affix-wrapper {
+  @apply h-7;
+}
+.cf-search-input.page-search-input .ant-input-affix-wrapper,
+.cf-search-input.page-search-input .ant-input-search-button {
+  @apply dark:!bg-[#1E2732];
+}
+.cf-search-input.page-search-input .ant-input-group-addon button,
+.cf-search-input.footer-search-input .ant-input-group-addon button,
+.cf-search-input.chat-search-input .ant-input-group-addon button {
+  @apply w-7 h-7;
+}
+.cf-search-input .ant-input-affix-wrapper:focus,
+.cf-search-input .ant-input-affix-wrapper:focus-within {
+  @apply shadow-none;
+}
+
+.cf-search-input .ant-input-group-addon button {
+  @apply w-[34px] h-[34px] p-0 border-0 shadow-none hover:!bg-transparent;
+}
+
+.cf-search-input.search-btn-bg .ant-input-group-addon button {
+  @apply !bg-black/5 hover:!bg-black/5;
+}
+
+.cf-add-btn .ant-btn-icon {
+  @apply h-[26px] w-6 flex bg-primary-900 rounded-l-sm dark:!bg-dark-950;
+}
+
+.cf-add-select-btn .ant-select-arrows,
+.cf-add-select-btn .ant-select-selection-item {
+  @apply dark:text-black;
+}
+
+.cf-add-btn span {
+  @apply mr-2;
+}
+
+.cf-header-add-select .ant-select-selector {
+  @apply !pl-8;
+}
+
+.cf-header-add-select .ant-select-arrow {
+  @apply !end-auto !start-0 !mt-0 -translate-y-1/2 h-[26px] w-6 bg-primary-900 dark:!bg-dark-950 rounded-t-sm;
+}
+
+.custom-select-dropdown
+  .ant-select-selector:not(
+    body .cf-select-field .select-filed-header .ant-select-selector,
+    .common-filter .custom-select-dropdown .ant-select-selector:not
+  ),
+.custom-select-dropdown
+  .ant-select-selection-item:not(
+    .dashboard-select .ant-select-selection-item,
+    .common-filter .custom-select-dropdown .ant-select-selection-item,
+    body .cf-select-field .select-filed-header .ant-select-selection-item,
+    .status-selection-dropdown .ant-select-selection-item
+  ),
+.custom-select-dropdown .ant-select-selection-search-input {
+  @apply !h-full !leading-7 !border-0;
+}
+
+.cf-input-right input {
+  @apply text-right;
+}
+
+.cf-input-right input::-webkit-outer-spin-button,
+.cf-input-right input::-webkit-inner-spin-button {
+  @apply appearance-none;
+}
+
+.cf-input-right:focus-within
+  input::-webkit-outer-spin-button:not(
+    .cf-input-right:focus-within:has(
+        > input[readonly]::-webkit-outer-spin-button
+      )
+  ),
+.cf-input-right:focus-within
+  input::-webkit-inner-spin-button:not(
+    .cf-input-right:focus-within:has(
+        > input[readonly]::-webkit-inner-spin-button
+      )
+  ),
+.cf-input-right:hover
+  input::-webkit-outer-spin-button:not(
+    .cf-input-right:hover:has(> input[readonly]::-webkit-outer-spin-button)
+  ),
+.cf-input-right:hover
+  input::-webkit-inner-spin-button:not(
+    .cf-input-right:hover:has(> input[readonly]::-webkit-inner-spin-button)
+  ) {
+  -webkit-appearance: textfield;
+}
+
+.inline-edit .custom-input-left .ant-input {
+  @apply text-left cursor-pointer;
+}
+
+.ant-picker-ok .ant-btn {
+  @apply bg-primary-900 border-primary-900 dark:border-dark-400 dark:bg-dark-400 shadow-none;
+}
+
+.ant-progress .ant-progress-bg {
+  @apply bg-primary-900;
+}
+
+.file-photo-timeline-view .ant-collapse-item,
+.file-photo-timeline-view .ant-collapse-content,
+.multi-select-collapse .ant-collapse-item,
+.cf-input-field .ant-input-group-wrapper .ant-input-group-addon,
+.multi-select-collapse .ant-collapse-content.ant-collapse-content-active {
+  @apply border-0;
+}
+
+.multi-select-collapse .ant-collapse-content-box {
+  @apply !p-0 !py-1.5;
+}
+
+.multi-select-collapse
+  .ant-collapse-header:not(
+    .multi-select-collapse.checkbox-not-show .ant-collapse-header
+  ) {
+  @apply !py-[9px] !pl-10 !pr-[15px];
+}
+
+.multi-select-collapse .checkbox-not-show .ant-collapse-header {
+  @apply !py-[9px] !pl-[15px] !pr-[15px];
+}
+
+.multi-select-collapse .ant-checkbox-wrapper {
+  @apply absolute left-[15px] top-[7px];
+}
+
+.multi-select-collapse .ant-collapse-expand-icon {
+  @apply !h-4;
+}
+
+.multi-select-collapse .ant-collapse-item-active {
+  @apply !rounded-none bg-gray-200/30;
+}
+
+.select-project-dropdown .ant-select-arrow {
+  @apply right-0 -mt-[5px] text-primary-900 dark:text-white/90;
+}
+
+.select-project-dropdown .ant-select-selector {
+  @apply !p-0 !text-xs;
+}
+
+.select-project-dropdown .ant-select-selection-item {
+  @apply font-bold;
+}
+
+.header-select-status-option .ant-select-selection-item {
+  @apply !text-xs;
+}
+
+.select-project-popup .ant-select-item-option-content {
+  @apply text-xs;
+}
+
+.select-project-popup .ant-select-item {
+  @apply !min-h-fit;
+}
+
+.ant-select-arrow span[aria-label="down"] svg {
+  @apply !h-2.5 !w-2.5;
+}
+.ant-color-picker .ant-popover-inner {
+  @apply !p-4;
+}
+
+.ant-popover-inner {
+  @apply !p-0 dark:bg-white;
+}
+
+.project-percent .ant-progress .ant-progress-circle-trail {
+  stroke-width: 2px;
+}
+
+.project-percent .ant-progress.ant-progress-circle .ant-progress-text {
+  @apply text-[0.75em] text-[#008000] font-medium;
+}
+
+.est-percent .ant-progress.ant-progress-circle .ant-progress-text {
+  @apply text-[0.75em] text-primary-900 font-medium;
+}
+
+.file-photo-timeline-view .ant-collapse-header {
+  @apply !p-0 w-fit;
+}
+
+.file-photo-timeline-view .ant-collapse-expand-icon {
+  @apply w-[22px] h-[22px] !p-0 flex items-center justify-center rounded-[3px] bg-primary-900/5;
+}
+
+.file-photo-timeline-view .ant-collapse-item-active .ant-collapse-expand-icon {
+  @apply bg-primary-900/20;
+}
+
+.ant-tooltip-inner {
+  @apply !text-center;
+}
+
+.ant-tooltip-arrow {
+  @apply !bottom-px;
+}
+
+/* Start: File and photo Module and project module */
+.file-folderlist
+  .ant-tree-node-content-wrapper.ant-tree-node-content-wrapper-open,
+.file-folderlist
+  .ant-tree-node-content-wrapper.ant-tree-node-content-wrapper-close,
+.ant-checkbox-wrapper,
+.radio-list-btn {
+  @apply flex items-center;
+}
+
+.file-folderlist .ant-tree-title {
+  @apply inline-block truncate max-w-[calc(100%-50px)];
+}
+
+.file-folder-collapse.drawer-file-move .ant-tree-switcher {
+  @apply absolute right-2.5;
+}
+
+.file-folder-collapse .ant-tree-switcher {
+  @apply absolute right-2 top-1/2 -translate-y-1/2;
+}
+
+.file-folder-collapse.drawer-file-move
+  .file-folderlist.ant-tree-treenode
+  .ant-tree-node-content-wrapper,
+.file-folder-collapse
+  .file-folderlist.ant-tree-treenode
+  .ant-tree-node-content-wrapper {
+  @apply p-2;
+}
+
+.file-folder-collapse.drawer-file-move .file-folderlist.ant-tree-treenode,
+.file-folder-collapse .file-folderlist.ant-tree-treenode {
+  @apply p-0 before:!block before:h-full before:border-t before:border-solid before:border-primary-100 first:before:border-none dark:before:border-white/5;
+}
+
+.file-folderlist .ant-tree-switcher svg {
+  @apply dark:text-white/80;
+}
+
+.file-folder-collapse .file-folderlist.ant-tree-treenode {
+  @apply before:!bg-[#F1F4FA] dark:before:!bg-dark-800;
+}
+
+.file-folder-collapse.drawer-file-move .ant-tree-treenode {
+  @apply !p-2;
+}
+
+.file-folder-collapse.drawer-file-move .file-folderlist.ant-tree-treenode {
+  @apply before:!bg-transparent !py-2.5 !px-5;
+}
+
+.file-folder-collapse .ant-tree-treenode {
+  @apply p-1 before:hidden text-primary-900 dark:text-white/90 font-semibold;
+}
+
+.ant-picker .ant-picker-input > input,
+.cf-input-field .ant-input-group-addon,
+.cf-input-field .ant-input:not(.cf-input-field .text-sucess),
+.cf-select-field
+  .ant-select-selection-item:not(
+    .cf-select-field .header-select-status-option .ant-select-selection-item
+  ),
+.loading-spinner .text-blue-500,
+.ant-picker .ant-picker-input > input[disabled],
+.cf-select-field .ant-select-disabled .ant-select-selection-item,
+.cf-input-field .ant-input[disabled],
+.cf-currency-input-field input[disabled],
+.ant-select-dropdown
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+  .ant-select-item-option-state,
+.cf-select-field
+  .ant-select-multiple
+  .ant-select-selection-item
+  .ant-select-selection-item-content,
+.file-folder-collapse
+  .file-folderlist.ant-tree-treenode
+  .ant-tree-node-content-wrapper,
+.cf-search-input .ant-input-affix-wrapper input,
+.cf-select-field
+  .ant-select-multiple
+  .ant-select-selection-item
+  .ant-select-selection-item-remove:hover,
+.ant-select-dropdown .ant-select-item-option {
+  @apply !text-primary-900 dark:!text-white/90;
+}
+
+.file-folder-collapse .file-folderlist span.ant-tree-title {
+  @apply !text-black/80 dark:!text-white/90;
+}
+
+.file-folder-collapse
+  .file-sub-folderlist
+  .ant-tree-node-content-wrapper.ant-tree-node-selected
+  .sub-folderlist-title {
+  @apply !text-orange-500;
+}
+
+.ant-tree.ant-tree-directory
+  .ant-tree-treenode
+  .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  @apply text-orange-500;
+}
+
+.file-folder-collapse
+  .file-folderlist
+  .ant-tree-switcher.ant-tree-switcher_open
+  .ant-tree-switcher-icon {
+  @apply rotate-90;
+}
+
+.file-folder-collapse
+  .file-folderlist
+  .ant-tree-switcher.ant-tree-switcher_open
+  .ant-tree-switcher-icon,
+.file-folder-collapse
+  .file-folderlist:hover
+  .ant-tree-switcher
+  .ant-tree-switcher-icon {
+  @apply opacity-100;
+}
+
+.file-folder-collapse .file-add-folder {
+  @apply pt-2 pb-0.5 px-2.5;
+}
+/* Hide last menu option in image markup popup  */
+.SfxPopper-wrapper
+  .SfxMenuItem-wrapper:last-child
+  > .FIE_topbar-save-menu-item {
+  display: none;
+}
+.header-select-status-option .header-status-color,
+.file-sub-folderlist .ant-tree-switcher,
+.file-folder-collapse .file-add-folder .ant-tree-indent,
+.file-folder-collapse
+  .file-add-folder
+  .ant-tree-iconEle.ant-tree-icon__customize {
+  @apply hidden;
+}
+
+.file-sub-folderlist
+  .ant-tree-node-content-wrapper.ant-tree-node-content-wrapper-normal {
+  @apply w-[calc(100%-30px)];
+}
+
+.file-folder-collapse
+  .file-sub-folderlist.ant-tree-treenode-switcher-open
+  .ant-tree-node-content-wrapper.ant-tree-node-selected
+  .add-new-folder-brn {
+  @apply !flex;
+}
+
+.file-folder-collapse
+  .file-sub-folderlist.ant-tree-treenode-switcher-open
+  .sub-folderlist-title-block {
+  @apply max-w-[calc(100%-28px)];
+}
+/* End: File and photo Module and project module */
+
+.ant-checkbox.ant-checkbox-checked .ant-checkbox-inner,
+.ant-radio.ant-radio-checked .ant-radio-inner {
+  @apply dark:bg-primary-900;
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-inner,
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner,
+.ant-checkbox .ant-checkbox-inner {
+  @apply dark:!bg-transparent dark:!border-white/90;
+}
+
+.custom-filed-checkbox.ant-checkbox-wrapper .ant-checkbox {
+  @apply mt-[3px] self-start;
+}
+
+.ant-checkbox-inner,
+.ant-radio-inner {
+  @apply dark:bg-white/90;
+}
+
+.ant-popover.ant-popconfirm .ant-popover-inner {
+  @apply !p-3;
+}
+
+.ant-modal-wrap .ant-modal-content {
+  @apply dark:bg-dark-900;
+}
+
+.ant-popover .ant-popover-arrow {
+  @apply dark:before:bg-dark-900;
+}
+
+.ant-btn-primary:disabled {
+  @apply bg-primary-700;
+}
+
+.ant-notification-notice-message {
+  @apply !mb-0;
+}
+
+.ant-radio-wrapper .ant-radio-checked .ant-radio-inner,
+.ant-spin .ant-spin-dot-item {
+  @apply dark:!bg-[#666e79];
+}
+
+.ag-checkbox-input-wrapper {
+  @apply border border-solid border-[#d9d9d9] !rounded cursor-pointer;
+}
+
+.ag-checkbox-input-wrapper.ag-checked {
+  @apply bg-primary-900 border-0;
+}
+
+.ag-checkbox-input-wrapper:after {
+  top: 7px !important;
+  left: 4px !important;
+  inset-inline-start: 21.5%;
+  display: table;
+  width: 5.7142857142857135px;
+  height: 9.142857142857142px;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-inline-start: 0;
+  transform: rotate(45deg) scale(0) translate(-50%, -50%);
+  opacity: 0;
+  content: "" !important;
+  transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+}
+
+.ag-checkbox-input-wrapper.ag-checked:after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1) translate(-50%, -50%);
+  transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+
+.ag-row-selected:before {
+  @apply !bg-transparent;
+}
+
+.ag-row-hover.ag-row-selected:before {
+  @apply !bg-none;
+}
+
+.ag-checkbox-input-wrapper:focus-within,
+.ag-checkbox-input-wrapper:active,
+.ant-radio-group .ant-wave,
+.ant-btn .ant-wave {
+  @apply !shadow-none;
+}
+
+.ant-select-dropdown .ant-space-item {
+  @apply !w-full;
+}
+
+.ant-select-selection-placeholder {
+  @apply !text-[#bdbdbd] dark:!text-white/25 !font-light dark:!font-normal;
+}
+
+.ant-select-multiple
+  .ant-select-selection-item:not(
+    .common-filter .ant-select-multiple .ant-select-selection-item
+  ) {
+  @apply bg-[#EBF1F9] border-[#B4C6DD] dark:bg-dark-600;
+}
+
+.common-filter .ant-select-multiple .ant-select-selection-item {
+  @apply bg-[#d1e2f9] border-[#7a899d] dark:bg-dark-600;
+}
+
+.status-selection-dropdown {
+  @apply rounded !h-5;
+}
+
+.status-selection-dropdown .ant-select-selection-item,
+.status-selection-dropdown .ant-select-selector {
+  @apply !text-13 !font-normal;
+}
+
+.status-selection-dropdown .ant-select-selection-item {
+  @apply !pr-0;
+}
+
+.status-selection-dropdown .ant-select-arrow {
+  @apply opacity-0 right-1;
+}
+
+.status-selection-dropdown:hover .ant-select-arrow,
+.status-selection-dropdown.ant-select-open .ant-select-arrow {
+  @apply opacity-100;
+}
+
+.status-selection-dropdown:hover .ant-select-selector,
+.status-selection-dropdown.ant-select-open .ant-select-selector {
+  @apply pl-1.5 pr-4;
+}
+
+.singal-icon-with-select .ant-select-arrow {
+  @apply right-[30px];
+}
+
+@media (max-height: 600px), (max-width: 767px) {
+  .ant-picker-dropdown-range.ant-picker-dropdown .ant-picker-header button {
+    @apply leading-7;
+  }
+  .ant-picker-dropdown-range.ant-picker-dropdown .ant-picker-content th,
+  .ant-picker-dropdown-range.ant-picker-dropdown .ant-picker-header-view {
+    @apply h-7;
+  }
+  .ant-picker-dropdown-range.ant-picker-dropdown .ant-picker-body {
+    @apply !py-0.5 !px-2.5;
+  }
+  .ant-picker-dropdown-range.ant-picker-dropdown .ant-picker-date-panel {
+    @apply !w-[270px];
+  }
+  .ant-picker-dropdown-range.ant-picker-dropdown
+    .ant-picker-cell
+    .ant-picker-cell-inner {
+    @apply min-w-[22px] h-[22px] leading-[22px];
+  }
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(
+    .ant-picker-cell-range-start-single
+  )::before,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(
+    .ant-picker-cell-range-end-single
+  )::before,
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-in-range::before {
+  @apply bg-[#e4ecf6];
+}
+
+.ant-picker-dropdown
+  .ant-picker-date-panel
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start
+  .ant-picker-cell-inner::after,
+.ant-picker-dropdown
+  .ant-picker-date-panel
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end
+  .ant-picker-cell-inner::after,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover::before,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start::before,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end::before,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-start.ant-picker-cell-range-hover::before,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-end.ant-picker-cell-range-hover::before,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(
+    .ant-picker-cell-range-start-single
+  ).ant-picker-cell-range-hover-start::before,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(
+    .ant-picker-cell-range-end-single
+  ).ant-picker-cell-range-hover-end::before,
+.ant-picker-panel
+  > :not(.ant-picker-date-panel)
+  .ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start::before,
+.ant-picker-panel
+  > :not(.ant-picker-date-panel)
+  .ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end::before {
+  background: #bbc9db !important;
+}
+
+.common-filter
+  .ant-select-multiple.ant-select-disabled
+  .ant-select-selection-item,
+.cf-select-field
+  .ant-select-disabled
+  .ant-select-selection-overflow-item.ant-select-selection-overflow-item-rest
+  .ant-select-selection-item {
+  @apply !bg-black/20 dark:bg-dark-900;
+}
+
+.ant-picker-dropdown .ant-picker-time-panel-column::after {
+  @apply h-2.5;
+}
+
+.ant-picker-time-panel-cell.ant-picker-time-panel-cell-selected
+  .ant-picker-time-panel-cell-inner {
+  @apply !bg-primary-900 !text-white;
+}
+.ant-notification-notice-content {
+  @apply min-h-[24px];
+}
+
+.cf-notification-notice {
+  @apply dark:bg-[#0a0f14];
+}
+
+.cf-notification-notice .ant-notification-notice-close-icon,
+.cf-notification-notice .ant-notification-notice-description,
+.cf-notification-notice .ant-notification-notice-message {
+  @apply dark:text-white;
+}
+
+.addon-before-class .cf-select-field.inline-edit .ant-select-selector {
+  @apply !pl-1.5 !pr-1.5;
+}
+
+.header-select-status-option .ant-select-selection-item {
+  @apply !pe-0;
+}
+
+.common-filter .ant-select-selector,
+.edit-inline-select .addon-before-class .ant-select-selection-item {
+  @apply !pe-[18px];
+}
+
+.header-select-status-option .ant-select-selection-search-input {
+  @apply !h-[18px];
+}
+
+.header-select-status-option.ant-select-open .ant-select-arrow,
+.header-select-status-option:hover .ant-select-arrow {
+  @apply !end-1.5;
+}
+
+.header-select-status-option.ant-select-open .ant-select-selector,
+.header-select-status-option:hover .ant-select-selector {
+  @apply !pl-1.5 !pr-4;
+}
+
+.header-select-status-option .ant-select-selector,
+.header-select-status-option .ant-select-arrow,
+.header-select-status-option .ant-select-selector .ant-select-selection-item {
+  color: inherit !important;
+}
+
+.addon-before-class:has(> .cf-select-field.inline-edit) {
+  @apply pr-6;
+}
+
+.addon-before-class
+  .cf-select-field.inline-edit.inline-loading-success
+  .ant-select-selector
+  .ant-select-selection-item {
+  @apply !pe-6;
+}
+
+.field-select-inline-block:has(
+    .addon-before-class .cf-select-field .ant-select-open
+  ),
+.addon-before-class:has(> .cf-select-field .ant-select.ant-select-focused) {
+  @apply w-full;
+}
+
+.full-width-modal .ant-modal {
+  @apply max-w-full;
+}
+
+.full-width-modal .ant-modal .ant-modal-content {
+  @apply h-screen rounded-none;
+}
+
+.ant-radio-wrapper .ant-radio.ant-radio-disabled:hover:after {
+  @apply invisible;
+}
+
+.ant-picker-dropdown.ant-picker-dropdown-range .ant-picker-panel-layout {
+  @apply flex-row-reverse;
+}
+
+.group-select-popup .ant-select-item-group {
+  @apply text-sm font-semibold text-black;
+}
+
+@media (max-height: 560px) {
+  .ant-picker-dropdown .ant-picker-time-panel .ant-picker-content {
+    @apply h-[165px];
+  }
+}
+.wizard-step .ant-steps-item-title {
+  @apply !text-primary-900 font-semibold md:text-13 lg:text-sm pr-0 !leading-[26px];
+}
+
+.wizard-step .ant-steps-item-icon {
+  @apply !h-[26px] !w-[26px] rounded-full !bg-white border border-primary-900 shadow-[0_0_0_2px_rgba(255,255,255,1),0_0_0_3px_rgba(34,53,88,1)] me-3.5 leading-[26px];
+}
+
+.wizard-step .ant-steps-item-icon .ant-steps-icon {
+  @apply !text-sm !text-primary-900;
+}
+
+.wizard-step .ant-steps-item.ant-steps-item-active .ant-steps-item-icon {
+  @apply !bg-primary-900;
+}
+
+.wizard-step
+  .ant-steps-item.ant-steps-item-active
+  .ant-steps-item-icon
+  .ant-steps-icon {
+  @apply !text-white;
+}
+
+.wizard-step .ant-steps-item-content {
+  @apply !min-h-[64px];
+}
+
+.wizard-step .ant-steps-item-tail {
+  @apply !w-0.5 after:!w-0.5 after:!bg-[#ccc] !start-3 !pt-[29px] !pb-0;
+}
+
+.cf-select-field .ant-select-selection-search-input {
+  @apply !pe-[18px];
+}
+
+.cf-select-field
+  .ant-select-selection-overflow
+  .ant-select-selection-overflow-item
+  .ant-select-selection-search-input {
+  @apply !pe-0;
+}
+
+.checkbox-group .ant-checkbox-wrapper {
+  @apply gap-2;
+}
+
+.ant-dropdown-menu-item-disabled
+  .ant-dropdown-menu-title-content
+  .dropdown-list-icon {
+  @apply !text-black/25;
+}
+
+.field-select-inline-block:not(
+    .common-card-head
+      .field-select-inline-block:has(
+        > .field-select-inline-inner .cf-select-field .select-filed-header
+      ),
+    .field-select-inline-block:has(
+        > .field-select-inline-inner .cf-select-field .custom-select-option
+      )
+  ) {
+  @apply overflow-hidden;
+}
+
+.select-add-icon-before .ant-select-selector {
+  @apply !pl-0 !pr-10;
+}
+
+.select-add-icon-before .ant-select-arrow {
+  @apply right-6;
+}
+
+/* Start: New Component css */
+
+/* Start: Common Css */
+.primary-btn {
+  @apply shadow-none;
+}
+
+.table-tooltip-text {
+  @apply truncate leading-4 w-fit max-w-full inline-block text-13;
+}
+/* End: Common Css */
+.drawer-open .ant-drawer-header {
+  @apply px-4 py-2.5;
+}
+
+.drawer-open .ant-drawer-header-title {
+  @apply flex-row-reverse;
+}
+
+.drawer-open .ant-drawer-close {
+  @apply me-0 text-base !text-primary-800 dark:text-white/90;
+}
+
+.drawer-open .ant-drawer-close .anticon.anticon-close svg {
+  @apply ease-in-out duration-300;
+}
+
+.drawer-open .ant-drawer-close:hover .anticon.anticon-close svg {
+  @apply !text-primary-900 rotate-90 dark:text-white/90;
+}
+
+.cf-field {
+  @apply before:absolute before:bottom-0 before:left-0 before:h-px before:w-full before:scale-x-0 before:origin-center before:bg-primary-900/60 dark:before:bg-[#696b6e] before:z-[5];
+}
+
+.cf-field:focus-within,
+.cf-field:focus {
+  @apply before:scale-x-100 before:transition-all before:ease-in-out before:duration-300;
+}
+
+.cf-new-currency-input-field input:focus-visible {
+  outline: none !important;
+}
+
+.cf-new-input-field.addon-after-icon input {
+  @apply px-0 h-[34px];
+}
+
+.border-addonAfter-icon .ant-input-wrapper .ant-input-group-addon,
+.input-addon-before-icon .ant-input-group-addon,
+.addon-before-inputfield-border .ant-input-wrapper .ant-input-group-addon,
+.cf-new-input-field.edit-inline .ant-input-wrapper > .ant-input-group-addon {
+  @apply p-0;
+}
+
+.input-addon-before-icon .ant-input,
+.cf-new-input-field.edit-inline
+  .ant-input-wrapper
+  > .ant-input-group-addon
+  + .ant-input-affix-wrapper {
+  @apply pl-1.5 pr-0;
+}
+
+.add-btn .ant-btn-icon + span {
+  @apply mr-2;
+}
+
+.add-btn .ant-btn-icon {
+  @apply h-[26px] w-6 min-w-6 flex bg-primary-900 rounded-l-sm dark:!bg-dark-950;
+}
+
+.search-custom-input .ant-input-group-addon {
+  @apply !start-0;
+}
+
+.search-custom-input .ant-input-wrapper {
+  direction: rtl;
+}
+
+.search-custom-input .ant-input-affix-wrapper {
+  direction: ltr;
+}
+
+.search-custom-input .ant-input-affix-wrapper {
+  @apply !rounded-r-md !rounded-l-none !border-0 dark:bg-[#ffffff0a] h-7 focus:shadow-none focus-within:shadow-none;
+}
+
+.search-custom-input .ant-input-affix-wrapper input {
+  @apply placeholder:!text-[#bdbdbd] dark:placeholder:!text-white/25;
+}
+
+.search-custom-input .ant-input-group-addon button {
+  @apply w-7 h-7 p-0 border-0 shadow-none hover:!bg-transparent;
+}
+
+.search-custom-input .ant-input-affix-wrapper input {
+  @apply !bg-transparent;
+}
+
+.common-tag {
+  @apply px-1 py-1 text-xs rounded min-w-[80px] text-center block truncate;
+}
+
+.cf-new-select-field .ant-select:focus-within + .icon-view-block,
+.cf-new-select-field .ant-select.ant-select-open + .icon-view-block,
+.cf-new-select-field:hover .icon-view-block {
+  @apply bg-[#f4f5f6];
+}
+
+.cf-new-select-field
+  .ant-select-show-search:has(
+    > .ant-select-selector .ant-select-selection-item:empty
+  )
+  .ant-select-clear,
+.cf-new-select-field .ant-select-open.ant-select-show-search .ant-select-clear,
+.cf-new-timepicker-field.edit-inline
+  .ant-picker:hover
+  .ant-picker-suffix:not(:last-child),
+.cf-new-timepicker-field.edit-inline .ant-picker-suffix,
+.cf-new-datepicker-field.edit-inline
+  .ant-picker:hover
+  .ant-picker-suffix:not(:last-child),
+.cf-new-datepicker-field.edit-inline .ant-picker-suffix,
+.cf-new-select-field.edit-inline .ant-select-arrow,
+.new-file-upload-Dragger .ant-upload-list-item-actions,
+.ant-upload-list-item-container:hover + .ant-upload-list-item-container:before {
+  @apply opacity-0;
+}
+
+.cf-new-select-field
+  .ant-select-show-search:has(
+    > .ant-select-selector .ant-select-selection-item:empty
+  )
+  .ant-select-arrow,
+.cf-new-timepicker-field.edit-inline
+  .ant-picker.ant-picker-focused
+  .ant-picker-suffix,
+.cf-new-timepicker-field.edit-inline:hover .ant-picker-suffix,
+.cf-new-datepicker-field.edit-inline
+  .ant-picker.ant-picker-focused
+  .ant-picker-suffix,
+.cf-new-datepicker-field.edit-inline:hover .ant-picker-suffix,
+.cf-new-select-field
+  .ant-select:focus-within
+  .ant-select-arrow:not(
+    .cf-new-select-field .ant-select:hover .ant-select-arrow:not(:last-child)
+  ),
+.cf-new-select-field .ant-select.ant-select-open .ant-select-arrow,
+.cf-new-select-field.edit-inline:hover
+  .ant-select-arrow:not(
+    .common-filter:has(
+        > div > div .cf-new-select-field .ant-select.ant-select-disabled
+      )
+      .ant-select-arrow,
+    .cf-new-select-field.edit-inline:hover
+      .ant-select:hover
+      .ant-select-arrow:not(:last-child)
+  ),
+.new-file-upload-Dragger
+  .ant-upload-list-item-container:hover
+  .ant-upload-list-item-actions {
+  @apply opacity-100;
+}
+
+.addon-before-icon:has(.cf-new-select-field .ant-select:focus-within),
+.addon-before-icon:has(.cf-new-select-field.edit-inline:hover),
+.addon-before-icon:has(.cf-new-select-field .ant-select.ant-select-open) {
+  @apply w-full;
+}
+
+.cf-field.cf-new-select-field.edit-inline .ant-select-selection-placeholder {
+  @apply start-1.5;
+}
+
+.cf-field.cf-new-select-field
+  .ant-select-multiple
+  .ant-select-selection-search:not(
+    .custom-select-dropdown .ant-select-selection-search,
+    .cf-singal-selection .ant-select-selection-search,
+    .cf-field.cf-new-select-field.inline-edit .ant-select-selection-search
+  ),
+.cf-field.cf-new-select-field.inline-edit
+  .ant-select-selection-overflow
+  .ant-select-selection-search {
+  @apply ms-0;
+}
+
+.cf-field.cf-new-select-field .ant-select-selection-search,
+.cf-field.cf-new-select-field
+  .ant-select-multiple
+  .ant-select-selection-search:not(
+    .custom-select-dropdown .ant-select-selection-search,
+    .cf-singal-selection .ant-select-selection-search,
+    .cf-field.cf-new-select-field.inline-edit .ant-select-selection-search
+  ),
+.cf-field.cf-new-select-field.inline-edit
+  .ant-select-selection-overflow
+  .ant-select-selection-search,
+.cf-field.cf-new-select-field .ant-select-selection-placeholder {
+  @apply start-0;
+}
+
+.cf-field.cf-new-select-field.edit-inline .ant-select-selection-search {
+  @apply start-1.5;
+}
+
+.cf-field.cf-new-select-field
+  .ant-select-selector:not(
+    .cf-field.cf-new-select-field .border-select-filed .ant-select-selector,
+    .cf-field.cf-new-select-field
+      .border-select-filed-option
+      .ant-select-selector,
+    .cf-field.cf-new-select-field
+      .header-select-status-dropdown
+      .ant-select-selector
+  ) {
+  @apply ps-0;
+}
+
+.cf-field.cf-new-select-field.edit-inline .ant-select-selector {
+  @apply !ps-1.5;
+}
+
+.cf-field.cf-new-select-field .border-select-filed-option .ant-select-selector {
+  @apply p-1.5;
+}
+
+.cf-new-textarea-field.edit-inline
+  textarea:not(
+    .cf-new-textarea-field.edit-inline:hover textarea,
+    .cf-new-textarea-field.edit-inline:focus-within textarea
+  ) {
+  @apply resize-none;
+}
+
+.right-button-icon:has(> div .cf-new-input-field:hover),
+.right-button-icon:has(> div .cf-new-input-field:focus-within),
+.right-button-icon:has(> div .cf-new-button-field:hover),
+.right-button-icon:has(> div .cf-new-button-field:focus-within) {
+  @apply w-full;
+}
+
+.directory-upload-image .ant-upload-drag .ant-upload,
+.ant-timeline .ant-timeline-item-head.ant-timeline-item-head-custom {
+  @apply p-0 bg-transparent;
+}
+
+.add-button .ant-btn-icon {
+  @apply rounded-l;
+}
+
+.contractor-type span {
+  @apply ml-1;
+}
+
+.card-right-button label {
+  @apply focus-within:!bg-[#eceff1] !bg-[#fff] border focus-within:!border-gray-300 !border-gray-300 !text-primary-900;
+}
+.search-input-border .ant-input-wrapper {
+  direction: rtl;
+}
+
+.search-input-border .ant-input-group-addon .ant-btn {
+  @apply border-0;
+}
+
+.search-input-border .ant-input {
+  direction: ltr;
+}
+
+.cf-new-input-field .ant-input-affix-wrapper,
+.cf-new-input-field .ant-input,
+.cf-new-textarea-field .ant-input,
+.cf-new-select-field .ant-select-selector,
+.search-input-border .ant-input,
+.search-input-borderless .ant-input,
+.ant-checkbox-wrapper .ant-checkbox-disabled + span,
+.ant-radio-wrapper .ant-radio-disabled + span {
+  @apply text-primary-900;
+}
+
+.search-input-border .ant-input {
+  @apply h-[34px] rounded-none !rounded-e-md shadow-none border-0 hover:border-transparent focus-within:border-transparent pl-0;
+}
+
+.ant-upload-wrapper .ant-upload-drag {
+  @apply border-2 h-fit mx-4 w-[calc(100%-32px)] mb-4;
+}
+
+.new-file-upload-Dragger .ant-upload-list {
+  @apply h-[calc(100vh-230px)] overflow-y-auto flex flex-col gap-2;
+}
+
+.new-file-upload-Dragger .ant-upload-list-item-container {
+  @apply relative first:before:hidden px-4 before:absolute before:-top-[5px] before:left-0 before:!h-px before:bg-gray-200/50 before:!w-full hover:before:opacity-0;
+}
+
+.new-file-upload-Dragger
+  .ant-upload-list-item-container:hover
+  .ant-upload-list-item {
+  @apply shadow-[0px_4px_15px] shadow-black/10;
+}
+
+.new-file-upload-Dragger .ant-upload-list-item {
+  @apply !border-0 !py-3 !px-4 rounded-md !mt-0 !h-auto hover:bg-transparent;
+}
+
+.file-photos-tags-list .ant-select-selection-overflow {
+  @apply flex-nowrap overflow-x-auto overflow-y-hidden;
+}
+
+.show-status-icon .ant-picker-input .ant-picker-suffix,
+.show-status-icon .ant-picker-input .ant-picker-clear,
+.show-status-icon .ant-select .ant-select-arrow,
+.show-status-icon .ant-select .ant-select-clear,
+.header-select-status-dropdown .ant-select-arrow,
+.file-photos-tags-list .ant-select-clear,
+.file-photos-tags-list .ant-select-arrow {
+  @apply hidden;
+}
+
+.file-photos-tags-list .ant-select-selection-item {
+  @apply h-5 leading-5 !bg-primary-900 text-white;
+}
+
+.file-photos-tags-list .ant-select-selection-item-remove {
+  @apply mr-0 !text-white;
+}
+
+.addon-before-inputfield-border .ant-input-wrapper .ant-input {
+  @apply py-[5px] px-1.5;
+}
+
+.header-select-status-dropdown .ant-select-selection-item,
+.file-photos-tags-list .ant-select-selection-item-content {
+  @apply text-xs leading-[18px];
+}
+
+.border-select-filed .ant-select-selection-item,
+.popup-select-option-header .ant-select-item-option-content {
+  @apply text-13;
+}
+
+.header-select-status-dropdown .ant-select-selector {
+  color: inherit;
+}
+
+.header-select-status-dropdown .ant-select-selection-item {
+  @apply !pe-0;
+}
+
+.header-select-status-dropdown.ant-select-open .ant-select-arrow,
+.header-select-status-dropdown:hover .ant-select-arrow {
+  @apply flex;
+}
+
+.header-select-status-dropdown .ant-select-arrow {
+  @apply end-1;
+}
+
+.header-select-status-dropdown.ant-select-open .ant-select-selector,
+.header-select-status-dropdown:hover .ant-select-selector {
+  @apply pl-1.5 pr-4;
+}
+
+.field-text-right input {
+  @apply text-right;
+}
+
+.hours-sites-picker input {
+  @apply !leading-3;
+}
+
+.checkbox-group-col .ant-checkbox-wrapper {
+  @apply w-fit;
+}
+
+.search-input-bg-transparent .ant-input,
+.search-input-bg-transparent .ant-input-group-addon,
+.search-input-bg-transparent .ant-input-group-addon .ant-btn {
+  @apply !bg-transparent;
+}
+
+.transparent-checkbox .ant-checkbox-inner,
+.custom-checkbox.ant-checkbox-wrapper-disabled
+  .ant-checkbox-disabled
+  .ant-checkbox-inner {
+  @apply bg-transparent;
+}
+
+.border-white-checkbox .ant-checkbox-inner {
+  @apply !border-white;
+}
+
+.custom-checkbox.ant-checkbox-wrapper-disabled span {
+  color: inherit;
+}
+
+.search-input-borderless .ant-input-wrapper {
+  direction: rtl;
+}
+
+.search-input-borderless .ant-input-affix-wrapper .ant-input-suffix {
+  @apply block;
+}
+
+.search-input-borderless .ant-input-group-addon .ant-btn {
+  @apply border-0;
+}
+
+.search-input-borderless .ant-input-affix-wrapper {
+  direction: ltr;
+}
+
+.search-input-borderless .ant-input-affix-wrapper {
+  @apply pl-0.5;
+}
+
+.search-input-borderless .ant-input {
+  @apply h-[26px] rounded-none !rounded-e-md shadow-none border-0 hover:border-transparent focus-within:border-transparent pl-0;
+}
+
+.cf-new-textarea-field .ant-input[disabled],
+.cf-new-input-field .ant-input[disabled] {
+  @apply cursor-no-drop;
+}
+
+.common-filter
+  .ant-select-show-arrow.ant-select-show-search
+  .ant-select-selector {
+  @apply !pe-6;
+}
+
+.ant-popover .common-filter .cf-new-input-field input[type="button"],
+.ant-popover .common-filter .cf-new-input-field input[type="input"],
+.ant-popover .common-filter .cf-new-input-field input[type="text"],
+.ant-popover .date-text,
+body
+  .ant-popover
+  .common-filter
+  .cf-new-select-field.edit-inline
+  .filter-select-class
+  .ant-select-selector
+  .ant-select-selection-item:not(
+    body
+      .ant-popover
+      .common-filter
+      .cf-new-select-field.edit-inline
+      .filter-select-class.ant-select-multiple
+      .ant-select-selector
+      .ant-select-selection-item
+  ) {
+  @apply !text-xs !leading-[15px] !font-semibold;
+}
+
+body
+  .ant-popover
+  .common-filter
+  .cf-new-select-field.edit-inline
+  .filter-select-class.ant-select-multiple
+  .ant-select-selector
+  .ant-select-selection-item {
+  @apply !text-xs !leading-[18px] !font-semibold !pl-0.5;
+}
+
+.common-filter
+  .cf-new-select-field.edit-inline
+  .filter-select-class.ant-select-multiple
+  .ant-select-selector
+  .ant-select-selection-item {
+  @apply !h-5;
+}
+
+body
+  .common-filter
+  .cf-new-select-field.edit-inline
+  .filter-select-class
+  .ant-select-selector
+  .ant-select-selection-item:not(
+    body
+      .common-filter
+      .cf-new-select-field.edit-inline
+      .filter-select-class.ant-select-multiple
+      .ant-select-selection-item
+  ) {
+  @apply !leading-5;
+}
+
+.common-filter
+  .cf-new-select-field.edit-inline
+  .filter-select-class
+  .ant-select-selector
+  .ant-select-selection-item {
+  @apply !text-13 !leading-4;
+}
+
+.common-filter
+  .cf-new-select-field.edit-inline
+  .filter-select-class
+  .ant-select-selector,
+.ant-popover
+  .more-option-filter-list
+  .common-filter
+  .cf-new-select-field.edit-inline
+  .filter-select-class
+  .ant-select-selector {
+  @apply !pl-0;
+}
+
+.ant-popover
+  .common-filter
+  .cf-new-select-field.edit-inline
+  .filter-select-class
+  .ant-select-selector {
+  @apply !pl-1.5;
+}
+
+.picker-dialog-bg {
+  @apply !bg-black/45 !z-[1201];
+}
+
+.picker.picker-dialog {
+  @apply z-[1202];
+}
+
+.directory-upload-image .ant-upload-drag {
+  @apply w-full h-full border-0 m-0;
+}
+
+.ant-checkbox-checked.ant-checkbox-disabled .ant-checkbox-inner {
+  @apply bg-primary-900;
+}
+
+.ant-checkbox-checked.ant-checkbox-disabled .ant-checkbox-inner:after {
+  @apply border-white;
+}
+
+.ellipsis-input-field .ant-input {
+  @apply truncate;
+}
+
+.placeholder-white .ant-input {
+  @apply placeholder:!text-white/60;
+}
+
+.menu-tooltip.ant-tooltip .ant-tooltip-arrow:before,
+.menu-tooltip .ant-tooltip-inner {
+  @apply bg-black;
+}
+
+.file-photo-folder-view [data-testid="virtuoso-item-list"] {
+  @apply border border-solid border-[#E3E3E3];
+}
+
+.file-photo-folder-view
+  [data-testid="virtuoso-item-list"]
+  > div:last-child
+  .file-tree-list {
+  @apply border-b-0;
+}
+
+/* End: New Component css */
